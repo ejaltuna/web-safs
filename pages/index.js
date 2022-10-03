@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,11 +14,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Safs
+          
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+         <Navbar></Navbar>
           <code className={styles.code}>pages/index.js</code>
         </p>
 
