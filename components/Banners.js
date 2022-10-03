@@ -10,10 +10,10 @@ const Banners = () => {
     const handleHover = useCallback(() => {
         setIsHover(state => !state)
     }, [])
-    
-       
+
+
     return (
-        <>    
+        <>
             <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -34,30 +34,30 @@ const Banners = () => {
                 renderButtonGroupOutside={false}
                 renderDotsOutside={false}
                 responsive={{
-                  desktop: {
-                    breakpoint: {
-                      max: 3000,
-                      min: 1024
+                    desktop: {
+                        breakpoint: {
+                            max: 3000,
+                            min: 1024
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 40
                     },
-                    items: 1,
-                    partialVisibilityGutter: 40
-                },
-                mobile: {
-                    breakpoint: {
-                        max: 464,
-                        min: 0
+                    mobile: {
+                        breakpoint: {
+                            max: 464,
+                            min: 0
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 30
                     },
-                    items: 1,
-                    partialVisibilityGutter: 30
-                },
-                tablet: {
-                    breakpoint: {
-                        max: 1024,
-                        min: 464
-                    },
-                    items: 1,
-                    partialVisibilityGutter: 30
-                }
+                    tablet: {
+                        breakpoint: {
+                            max: 1024,
+                            min: 464
+                        },
+                        items: 1,
+                        partialVisibilityGutter: 30
+                    }
                 }}
                 rewind={false}
                 rewindWithAnimation={false}
@@ -74,25 +74,27 @@ const Banners = () => {
       image="https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
     />
      */}
-
-
                 <Image width={1600} height={500}
-                    src='/img/soft3.jpg'
-                    >
+                    src='/img/Banners/soft3.jpg'
+                >
+                </Image>
+                <Image width={1600} height={500}
+                    src='/img/Banners/safi3.jpg'
+                >
                 </Image>
 
                 <Image width={1600} height={500}
-                    src='/img/soft1.jpg'
-                    >
-                </Image> 
+                    src='/img/Banners/soft1.jpg'
+                >
+                </Image>
 
                 <Image width={1600} height={500}
-                    src='/img/soft2.jpg'
-                    >
-                </Image> 
-            </Carousel> 
-                   
-            
+                    src='/img/Banners/soft2.jpg'
+                >
+                </Image>
+            </Carousel>
+
+
         </>
     )
 }
