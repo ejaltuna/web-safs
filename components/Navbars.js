@@ -96,6 +96,7 @@ export default function Navbars() {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
+        
       ))}
     </>
     // <Navbar bg="warning" expand="lg">
