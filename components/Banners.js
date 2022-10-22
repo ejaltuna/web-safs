@@ -6,11 +6,9 @@ import { Container } from 'react-bootstrap';
 
 const Banners = () => {
     const [isHover, setIsHover] = useState(false)
-
     const handleHover = useCallback(() => {
         setIsHover(state => !state)
-    }, [])
-
+    }, []) 
 
     return (
         <>
